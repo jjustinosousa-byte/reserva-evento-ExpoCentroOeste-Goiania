@@ -102,7 +102,7 @@
 </head>
 <body>
   <header>
-    <h1>Reserva de Estandes Padrão 3x3=9m² - Expo Centro-Oeste - Senador Canedo</h1>
+    <h1>Reserva de Estandes Padrão 3x3=9m² - Expo Centro-Oeste - Goiânia</h1>
   </header>
 
   <div class="mapa-container">
@@ -149,13 +149,14 @@
     let estandesSelecionados = [];
 
     const estandes = [];
-    for (let i = 1; i <= 33; i++) estandes.push({ id: `A${i}`, cor: '#f4e542' });
-    for (let i = 34; i <= 45; i++) estandes.push({ id: `B${i}`, cor: '#ffb347' });
-    for (let i = 46; i <= 78; i++) estandes.push({ id: `C${i}`, cor: '#b0e0e6' });
-    for (let i = 79; i <= 105; i++) estandes.push({ id: `D${i}`, cor: '#98fb98' });
-    for (let i = 106; i <= 130; i++) estandes.push({ id: `E${i}`, cor: '#dda0dd' });
-    for (let i = 131; i <= 155; i++) estandes.push({ id: `F${i}`, cor: '#f08080' });
-    for (let i = 156; i <= 182; i++) estandes.push({ id: `G${i}`, cor: '#87ceeb' });
+    for (let i = 1; i <= 30; i++) estandes.push({ id: `A${i}`, cor: '#f4e542' });
+    for (let i = 31; i <= 42; i++) estandes.push({ id: `B${i}`, cor: '#ffb347' });
+    for (let i = 43; i <= 78; i++) estandes.push({ id: `C${i}`, cor: '#b0e0e6' });
+    for (let i = 79; i <= 87; i++) estandes.push({ id: `D${i}`, cor: '#98fb98' });
+    for (let i = 88; i <= 114; i++) estandes.push({ id: `E${i}`, cor: '#dda0dd' });
+    for (let i = 115; i <= 139; i++) estandes.push({ id: `F${i}`, cor: '#f08080' });
+    for (let i = 140; i <= 164; i++) estandes.push({ id: `G${i}`, cor: '#87ceeb' });
+    for (let i = 165; i <= 191; i++) estandes.push({ id: `H${i}`, cor: '#037094' });
 
     async function carregarReservas() {
       const snapshot = await db.collection("reservas").get();
